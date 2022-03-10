@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+#Gud-Weather-App {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  right: 0;
+  width: 28.5vw;
+  padding-left: 0.5vw;
+  height: 20vw;
+  background-color: rgba(0, 0, 0, 0.589);
+  z-index: 9;
+  overflow: hidden;
+}
+
+#Gud-Weather-App #HideUnHide {
+  position: absolute;
+  border: none;
+  width: 4vw;
+  height: 4vw;
+  left: -2.5vw;
+  top: -2.5vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#Gud-Weather-App:hover #HideUnHide {
+  background-color: rgba(255, 255, 255, 0.303);
+}
+
+#Gud-Weather-App:hover #MinimizeUnMinimize {
+  background-color: rgba(255, 255, 255, 0.427);
+}
+
+#CurrentWeatherIcon {
+  width: 8vw;
+  margin: 1vw;
+  margin-top: 0.8vw;
+}
+
+.TransitionTime {
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+
+#TempNMore {
+  position: absolute;
+  top: 2.5vw;
+  left: 10.5vw;
+  font-size: 2vw;
+  width: 30vw;
+}
+
+#TempNMore #RHW {
+  display: inline-block;
+}
+
+#TempNMore #RHW span {
+  display: block;
+  font-size: 0.75vw;
+}
+
+#LocationInfo {
+  position: absolute;
+  left: 16vw;
+  top: 1.5vw;
+  font-size: 1.3vw;
+  width: 30vw;
+}
+
+#LocationInfo span {
+  display: block;
+}
+
+#DayTemp {
+  position: absolute;
+  left: -8.3vw;
+  top: 1.25vw;
+}
+
+#MinimizeUnMinimize {
+  position: absolute;
+  top: 0vw;
+  right: 1vw;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  width: 2vw;
+  height: 0.5vw;
+  background-color: rgba(255, 255, 255, 0.192);
+}
+
+#Graph {
+  width: 40vw;
+  background-color: greenyellow;
+}
+
+#TempTimeline #TempLine {
+  color: white;
+  position: absolute;
+  top: 11.5vw;
+  left: 1.2vw;
+}
+
+#TempTimeline #TempLine li {
+  display: inline;
+  margin: 0.75vw;
+  color: white;
+}
+
+#TempTimeline #TimeLine {
+  background-color: red;
+  font-size: 0.8vw;
+  position: absolute;
+  top: 18vw;
+}
+
+#TempTimeline #TimeLine li {
+  display: inline;
+  margin: 0.5vw;
+}
+
+#GraphChoices {
+  position: absolute;
+  left: 1vw;
+}
+
+#GraphChoices button {
+  border-style: none;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#GraphChoices button:hover {
+  color: orange;
+}
