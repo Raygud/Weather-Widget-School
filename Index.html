@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/Assets/Src/Gud-Weather-app.js" defer></script>
+    <script src="/Assets/Src/WeatherApi.js" defer></script>
+
+    <link rel="stylesheet" href="/Assets/Css/Gud-Weather-app.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <svg id="CurrentWeatherIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.35 147.97"><defs><style>.cls-1,.cls-2,.cls-3,.cls-6,.cls-8{fill:none;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{stroke:#fff;stroke-miterlimit:10;}.cls-1,.cls-2,.cls-7,.cls-9{stroke-width:5px;}.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{stroke-linecap:round;}.cls-3,.cls-4,.cls-5,.cls-8{stroke-width:3px;}.cls-4,.cls-7,.cls-9{fill:#fff;}.cls-5{fill:#1d1d1b;}.cls-6{stroke-width:7px;}</style><g id="Clouds"><path class="cls-1" d="M147.15,88.68A32.16,32.16,0,0,0,115,56.52h-.39a42.65,42.65,0,0,0-6.69-11.23c-1-1.18-13.83-16.17-34-16.14-17.09,0-33.08,10.78-40.73,27.38a32.16,32.16,0,0,0,.87,64.3h83.67v-.12A32.16,32.16,0,0,0,147.15,88.68Z" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M138.16,22.85" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M72.31,1.18" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M59.2,20.85" transform="translate(1.51 -1.67)"/><path class="cls-3" d="M58.91,73.88" transform="translate(1.51 -1.67)"/></g><g id="Humidity"><path class="cls-2" d="M34.88,91.9a42.15,42.15,0,1,0,83.33,9,41.88,41.88,0,0,0-1-9h0L116,87.49a62.08,62.08,0,0,0-4.55-10.68L76.06,7.15,42,73.2c-2.19,5-5.67,12-7.12,18.7" transform="translate(1.51 -1.67)"/><circle class="cls-3" cx="64.9" cy="77.04" r="3.71"/><circle class="cls-3" cx="93.93" cy="113.62" r="3.71"/><path class="cls-3" d="M59.69,119C74.8,99.32,77.32,96.05,92.42,76.37" transform="translate(1.51 -1.67)"/></g><g id="Temp" data-name="Layer 15"><path class="cls-3" d="M83,95.14V13.06a8.5,8.5,0,0,0-17,0V95.14a25.88,25.88,0,1,0,17,0Z" transform="translate(1.51 -1.67)"/><circle class="cls-4" cx="76.01" cy="118.18" r="20.59"/><rect class="cls-4" x="72.28" y="79.05" width="7.24" height="23.38"/><circle class="cls-4" cx="75.9" cy="77.54" r="3.62"/><line class="cls-5" x1="67.51" y1="22.61" x2="75.9" y2="22.61"/><line class="cls-5" x1="67.51" y1="30.3" x2="79.52" y2="30.3"/><path class="cls-5" d="M72,24.28" transform="translate(1.51 -1.67)"/><path class="cls-5" d="M74,82.15" transform="translate(1.51 -1.67)"/><line class="cls-5" x1="69.32" y1="36.86" x2="77.71" y2="36.86"/></g><g id="BrokenClouds"><path class="cls-1" d="M146.29,88.68a32.16,32.16,0,0,0-32.16-32.16h-.39a42.65,42.65,0,0,0-6.69-11.23c-1-1.18-13.83-16.17-34-16.14-17.09,0-33.08,10.78-40.73,27.38a32.16,32.16,0,0,0,.87,64.3h83.67v-.12A32.16,32.16,0,0,0,146.29,88.68Z" transform="translate(1.51 -1.67)"/><path class="cls-1" d="M131.11,35.8H131a14.26,14.26,0,0,0-2.22-3.73c-.33-.39-4.6-5.38-11.32-5.37a15.23,15.23,0,0,0-13.55,9.11,10.62,10.62,0,0,0-5.1,1.46,83.31,83.31,0,0,1,6.69,6.6A19.44,19.44,0,0,1,108.72,48c1,2,1.4,4.33,2.65,6.2.69,1,1.66,2,2.31,3H132v0a10.69,10.69,0,0,0-.9-21.35Z" transform="translate(1.51 -1.67)"/></g><g id="Mist"><path class="cls-1" d="M146.29,85.66A32.16,32.16,0,0,0,114.13,53.5h-.39a42.65,42.65,0,0,0-6.69-11.23c-1-1.18-13.83-16.17-34-16.14-17.09,0-33.08,10.78-40.73,27.38a32.16,32.16,0,0,0,.87,64.3h83.67v-.12A32.16,32.16,0,0,0,146.29,85.66Z" transform="translate(1.51 -1.67)"/><line class="cls-3" x1="28.02" y1="123.15" x2="88.83" y2="123.15"/><line class="cls-3" x1="63.37" y1="130.14" x2="124.18" y2="130.14"/><line class="cls-3" x1="123.23" y1="144.12" x2="62.42" y2="144.12"/><line class="cls-3" x1="87.88" y1="137.13" x2="27.07" y2="137.13"/><line class="cls-3" x1="54.62" y1="144.12" x2="27.07" y2="144.12"/><line class="cls-3" x1="54.62" y1="130.14" x2="27.07" y2="130.14"/><line class="cls-3" x1="123.23" y1="137.13" x2="95.68" y2="137.13"/><line class="cls-3" x1="123.23" y1="123.15" x2="95.68" y2="123.15"/></g><g id="Snow"><path class="cls-6" d="M124.53,46.88,23.37,103.12" transform="translate(1.51 -1.67)"/><polyline class="cls-6" points="109.51 32.48 103.9 57.01 127.77 64.95"/><polyline class="cls-6" points="41.3 114.24 46.92 89.71 23.04 81.77"/><path class="cls-6" d="M74.62,17.13l-.57,115.74" transform="translate(1.51 -1.67)"/><polyline class="cls-6" points="56.93 23.63 75.56 40.55 94.18 23.63"/><polyline class="cls-6" points="94.75 123.16 76.13 106.24 57.5 123.16"/><path class="cls-6" d="M123.78,104.73,24.43,45.34" transform="translate(1.51 -1.67)"/><polyline class="cls-6" points="128.02 82.38 103.98 89.8 109.06 114.44"/><polyline class="cls-6" points="23.09 64.29 47.13 56.86 42.05 32.22"/></g><g id="ClearSkyDay"><circle class="cls-1" cx="76.7" cy="73.33" r="45.98"/><path class="cls-2" d="M74.5,19.59V4.84" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M74.5,145.16V130.41" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M113.68,35.82l10.43-10.43" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M24.89,124.61l10.43-10.43" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M129.91,75h14.75" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M4.34,75H19.09" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M113.68,114.18l10.43,10.43" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M24.89,25.39,35.32,35.82" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M0,92.7" transform="translate(1.51 -1.67)"/></g><g id="SunUp"><circle class="cls-1" cx="76.7" cy="73.33" r="45.98"/><path class="cls-2" d="M74.5,19.59V4.84" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M74.5,145.16V130.41" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M113.68,35.82l10.43-10.43" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M24.89,124.61l10.43-10.43" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M129.91,75h14.75" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M4.34,75H19.09" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M113.68,114.18l10.43,10.43" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M24.89,25.39,35.32,35.82" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M0,92.7" transform="translate(1.51 -1.67)"/><polyline class="cls-2" points="59.33 80.61 76.7 63.24 94.07 80.61"/></g><g id="SunDown"><circle class="cls-1" cx="75.32" cy="73.33" r="45.98"/><path class="cls-2" d="M74.5,130.41v14.75" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M74.5,4.84V19.59" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M35.32,114.18,24.89,124.61" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M124.11,25.39,113.68,35.82" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M19.09,75H4.34" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M144.66,75H129.91" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M35.32,35.82,24.89,25.39" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M124.11,124.61l-10.43-10.43" transform="translate(1.51 -1.67)"/><path class="cls-2" d="M149,57.3" transform="translate(1.51 -1.67)"/><polyline class="cls-2" points="92.69 66.05 75.32 83.42 57.95 66.05"/></g><g id="ClearSkyNight"><path class="cls-1" d="M101.48,95.53A46,46,0,0,1,59,32a46,46,0,1,0,58.69,60.63A46.06,46.06,0,0,1,101.48,95.53Z" transform="translate(1.51 -1.67)"/></g><g id="RainDay"><path class="cls-1" d="M147.15,88.68A32.16,32.16,0,0,0,115,56.52h-.39a42.65,42.65,0,0,0-6.69-11.23A46,46,0,0,0,81.46,29.86a47.81,47.81,0,0,0-7.59-.7C53.3,29.25,35.68,53,33.14,56.54a32.16,32.16,0,0,0,.87,64.3h83.67v-.12A32.16,32.16,0,0,0,147.15,88.68Z" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M35.25,146.29l-1.18-4.24" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M31.83,133.25l-1.14-4.35" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M56.58,146.29l-1.17-4.24" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M53.16,133.25,52,128.9" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M76.8,146.29l-1.18-4.24" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M73.37,133.25l-1.14-4.35" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M98.13,146.29,97,142.05" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M94.71,133.25l-1.14-4.35" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M117,146.29l-1.17-4.24" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M113.6,133.25l-1.14-4.35" transform="translate(1.51 -1.67)"/><path class="cls-1" d="M84.43,30.53" transform="translate(1.51 -1.67)"/><path class="cls-8" d="M128.76,74.45" transform="translate(1.51 -1.67)"/><path class="cls-8" d="M111.76,52.62a5.3,5.3,0,0,0,1.82,2.53,5.45,5.45,0,0,0,2.12.55,32,32,0,0,1,13.83,5.2A23,23,0,1,0,92.34,34.67,36.63,36.63,0,0,1,111.76,52.62Z" transform="translate(1.51 -1.67)"/></g><g id="FewCloudsDay_" data-name="FewCloudsDay
+"><path class="cls-1" d="M147.15,89.53A32.16,32.16,0,0,0,115,57.36h-.39a42.81,42.81,0,0,0-6.69-11.23A45.93,45.93,0,0,0,81.46,30.71,48.54,48.54,0,0,0,73.87,30c-20.57.1-38.19,23.87-40.73,27.39a32.16,32.16,0,0,0,.87,64.3h83.67v-.12A32.16,32.16,0,0,0,147.15,89.53Z" transform="translate(1.51 -1.67)"/><path class="cls-1" d="M84.43,31.38" transform="translate(1.51 -1.67)"/><path class="cls-8" d="M128.76,75.3" transform="translate(1.51 -1.67)"/><path class="cls-8" d="M111.76,53.47A5.4,5.4,0,0,0,113.58,56a5.28,5.28,0,0,0,2.12.54,32.1,32.1,0,0,1,13.83,5.2A23,23,0,1,0,92.34,35.52,36.59,36.59,0,0,1,111.76,53.47Z" transform="translate(1.51 -1.67)"/></g><g id="RainNight"><path class="cls-1" d="M147.15,89.53A32.16,32.16,0,0,0,115,57.36h-.39a42.81,42.81,0,0,0-6.69-11.23A45.93,45.93,0,0,0,81.46,30.71,48.54,48.54,0,0,0,73.87,30c-20.57.1-38.19,23.87-40.73,27.39a32.16,32.16,0,0,0,.87,64.3h83.67v-.12A32.16,32.16,0,0,0,147.15,89.53Z" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M35.25,147.14l-1.18-4.25" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M31.83,134.09l-1.14-4.34" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M56.58,147.14l-1.17-4.25" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M53.16,134.09,52,129.75" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M76.8,147.14l-1.18-4.25" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M73.37,134.09l-1.14-4.34" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M98.13,147.14,97,142.89" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M94.71,134.09l-1.14-4.34" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M117,147.14l-1.17-4.25" transform="translate(1.51 -1.67)"/><path class="cls-7" d="M113.6,134.09l-1.14-4.34" transform="translate(1.51 -1.67)"/><path class="cls-1" d="M84.43,31.38" transform="translate(1.51 -1.67)"/><path class="cls-8" d="M128.76,75.3" transform="translate(1.51 -1.67)"/><path class="cls-1" d="M107.91,46.14c3.48,4.32,5.93,6.76,9.13,11.29.58.81,2-.18,2.88.31,1.2.67,3.36.57,4.64,1.07,4.2,1.64,5.69,1.5,9.95,2.57a22,22,0,0,1,2.31.72,25.59,25.59,0,0,0,8.5-10.8,25.5,25.5,0,0,1-32.55-33.62A25.54,25.54,0,0,0,97,35.58C100.06,38.77,105.21,42.78,107.91,46.14Z" transform="translate(1.51 -1.67)"/></g><g id="FewCloudsNight"><path class="cls-1" d="M147.15,89.53A32.16,32.16,0,0,0,115,57.36h-.39a42.81,42.81,0,0,0-6.69-11.23A45.93,45.93,0,0,0,81.46,30.71,48.54,48.54,0,0,0,73.87,30c-20.57.1-38.19,23.87-40.73,27.39a32.16,32.16,0,0,0,.87,64.3h83.67v-.12A32.16,32.16,0,0,0,147.15,89.53Z" transform="translate(1.51 -1.67)"/><path class="cls-1" d="M84.43,31.38" transform="translate(1.51 -1.67)"/><path class="cls-8" d="M128.76,75.3" transform="translate(1.51 -1.67)"/><path class="cls-1" d="M107.91,46.14c3.48,4.32,5.93,6.76,9.13,11.29.58.81,2-.18,2.88.31,1.2.67,3.36.57,4.64,1.07,4.2,1.64,5.69,1.5,9.95,2.57a22,22,0,0,1,2.31.72,25.59,25.59,0,0,0,8.5-10.8,25.5,25.5,0,0,1-32.55-33.62A25.54,25.54,0,0,0,97,35.58C100.06,38.77,105.21,42.78,107.91,46.14Z" transform="translate(1.51 -1.67)"/></g><g id="ThunderStorm"><path class="cls-1" d="M147.15,88.68A32.16,32.16,0,0,0,115,56.52h-.39a42.65,42.65,0,0,0-6.69-11.23c-1-1.18-13.83-16.17-34-16.14-17.09,0-33.08,10.78-40.73,27.38a32.16,32.16,0,0,0,.87,64.3h83.67v-.12A32.16,32.16,0,0,0,147.15,88.68Z" transform="translate(1.51 -1.67)"/><path class="cls-9" d="M92.4,48.7c-19.33-2-23.08-3.37-24.07-1.27C66.26,51.84,82.42,59.1,82.85,73c.31,10.08-8,12-8.41,24.7-.27,10,4.81,13.39,2.68,21.29-2.44,9-11.21,12.57-11.08,12.78s21.7-10,22.16-24.7c.16-5.27-2.46-8.33-.77-14.06,1.51-5.09,4.68-6.36,8.41-10.64C104,72.93,108,57,103.48,51.26,102.1,49.5,100.58,49.53,92.4,48.7Z" transform="translate(1.51 -1.67)"/></g></defs></svg>
+    <Section id="Gud-Weather-App">
+        <button id="HideUnHide" onclick="ToggleHide(this.id)"></button>
+        <button id="MinimizeUnMinimize" onclick="ToggleHide(this.id)"></button>
+    <svg>
+        <use id="CurrentIcon" ></use>
+    </svg>
+<section>
+<section id="TempNMore">
+    <h2>
+        <span id="DayTemp">??°C</span>
+        <span id="RHW"> 
+        <span id="Rain">Rain: ??%</span>
+        <span id="Humidity">Humidity: ??%</span>
+        <span id="Wind">Wind: ??m/s</span>
+        </span>
+    </h2>
+</section>
+    <h2 id="LocationInfo">
+        <span id="Location"> 
+            <span id="City">Aalborg</span>
+        </span>
+        <span id="DayTime">
+            Tuesday, 11:12
+        </span>
+        <span id="WeatherDescription">
+            Horrible sad clouds
+        </span>
+    </h2>
+
+    <div id="TempTimeline">
+        <div id="GraphChoices">
+            <button>Temperature | </button>
+            <button>Precipitation | </button>
+            <button>Wind</button>
+        </div>
+    <svg
+    width="400" height="180"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="background-color: rgba(255, 255, 255, 0);">
+
+    <path id="GraphTemp"
+    d="M0,100
+             L50,50
+             L100,100
+             L150,50
+             L200,100
+             L250,50
+             L300,100
+             L350,50
+             L400,100
+             L450,50
+             L500,100
+             z"
+          style="stroke:#f08717; fill:#f087179a;"/>
+</svg>
+<ol id="TempLine">
+    <li id="Temp0">7°C</li>
+    <li id="Temp1">2°C</li>
+    <li id="Temp2">19°C</li>
+    <li id="Temp3">12°C</li>
+    <li id="Temp4">14°C</li>
+    <li id="Temp5">7°C</li>
+    <li id="Temp6">5°C</li>
+</ol>
+
+<ol id="TimeLine">
+    <li>00:00</li>
+    <li>03:00</li>
+    <li>06:00</li>
+    <li>09:00</li>
+    <li>12:00</li>
+    <li>15:00</li>
+    <li>18:00</li>
+    <li>21:00</li>
+    <li>24:00</li>
+</ol>
+</div>
+
+
+    </Section>
+</body>
+</html>
